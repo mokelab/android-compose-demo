@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="group_composables">Composables</string>
+    <string name="composables_text">Text</string>
+    <string name="composables_text_display">Display</string>
+    <string name="composables_text_color">Text color</string>
+    <string name="composables_text_hello">Hello compose world!</string>
+    <string name="composables_text_size">Text size</string>
+</resources>

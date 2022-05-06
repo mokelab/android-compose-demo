@@ -11,6 +11,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/module" />
+            <option value="$PROJECT_DIR$/module/common" />
+            <option value="$PROJECT_DIR$/module/composables" />
+            <option value="$PROJECT_DIR$/module/util" />
+            <option value="$PROJECT_DIR$/module/util/list" />
           </set>
         </option>
       </GradleProjectSettings>
