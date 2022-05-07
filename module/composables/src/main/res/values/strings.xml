@@ -8,4 +8,5 @@
     <string name="composables_text_size">Text size</string>
     <string name="composables_image_resource">Resouce</string>
     <string name="composables_image">Image</string>
+    <string name="composables_image_center_crop">CenterCrop</string>
 </resources>
