@@ -2,10 +2,11 @@ package com.mokelab.demo.composables.button
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.mokelab.demo.composables.R
-import com.mokelab.demo.composables.routeContained
-import com.mokelab.demo.composables.routeOutlined
-import com.mokelab.demo.composables.routeText
+import androidx.navigation.NavController
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
+import androidx.navigation.navigation
+import com.mokelab.demo.composables.*
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 
@@ -35,4 +36,29 @@ fun ButtonTopScreen(
         back = back,
         navigate = navigate
     )
+}
+
+fun NavGraphBuilder.buttonGraph(
+    route: String,
+    back: () -> Unit,
+    navigate: (route: String) -> Unit,
+) {
+    navigation(startDestination = "${route}/${routeTop}", route = route) {
+        composable("${route}/${routeTop}") {
+            ButtonTopScreen(
+                routePrefix = route,
+                back = back,
+                navigate = navigate
+            )
+        }
+        composable("${route}/${routeContained}") {
+            ButtonContainedScreen(back = back)
+        }
+        composable("${route}/${routeOutlined}") {
+            ButtonOutlinedScreen(back = back)
+        }
+        composable("${route}/${routeText}") {
+            ButtonTextScreen(back = back)
+        }
+    }
 }

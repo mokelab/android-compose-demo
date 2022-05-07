@@ -2,10 +2,14 @@ package com.mokelab.demo.composables.text
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.mokelab.demo.composables.R
-import com.mokelab.demo.composables.routeColor
-import com.mokelab.demo.composables.routeDisplay
-import com.mokelab.demo.composables.routeSize
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
+import androidx.navigation.navigation
+import com.mokelab.demo.composables.*
+import com.mokelab.demo.composables.button.ButtonContainedScreen
+import com.mokelab.demo.composables.button.ButtonOutlinedScreen
+import com.mokelab.demo.composables.button.ButtonTextScreen
+import com.mokelab.demo.composables.button.ButtonTopScreen
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 
@@ -35,4 +39,29 @@ fun TextTopScreen(
         back = back,
         navigate = navigate
     )
+}
+
+fun NavGraphBuilder.textGraph(
+    route: String,
+    back: () -> Unit,
+    navigate: (route: String) -> Unit,
+) {
+    navigation(startDestination = "${route}/$routeTop", route = route) {
+        composable("${route}/$routeTop") {
+            TextTopScreen(
+                routePrefix = route,
+                back = back,
+                navigate = navigate
+            )
+        }
+        composable("${route}/${routeDisplay}") {
+            TextDisplay(back = back)
+        }
+        composable("${route}/${routeColor}") {
+            TextColor(back = back)
+        }
+        composable("${route}/${routeSize}") {
+            TextSize(back = back)
+        }
+    }
 }
