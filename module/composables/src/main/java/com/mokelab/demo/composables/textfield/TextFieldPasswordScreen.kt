@@ -26,7 +26,7 @@ fun TextFieldPasswordScreen(
     back: () -> Unit,
 ) {
     HasBackScaffold(
-        title = stringResource(id = R.string.composables_textfield_placeholder),
+        title = stringResource(id = R.string.composables_textfield_password),
         back = back,
     ) { paddingValues ->
         var value by remember { mutableStateOf("") }
