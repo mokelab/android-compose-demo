@@ -36,6 +36,10 @@ fun TextFieldTopScreen(
             stringResource(id = R.string.composables_textfield_outlined),
             "${routePrefix}/${routeOutlined}"
         ),
+        ListItem(
+            stringResource(id = R.string.composables_textfield_password_visibility),
+            "${routePrefix}/${routeVisibility}"
+        ),
     )
     SimpleList(
         title = stringResource(id = R.string.composables_textfield),
@@ -72,6 +76,9 @@ fun NavGraphBuilder.textFieldGraph(
         }
         composable("${route}/$routeOutlined") {
             TextFieldOutlinedScreen(back = back)
+        }
+        composable("${route}/$routeVisibility") {
+            TextFieldPasswordVisibilityScreen(back = back)
         }
     }
 }
