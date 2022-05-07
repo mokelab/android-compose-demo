@@ -20,4 +20,5 @@
     <string name="composables_textfield_placeholder">Placeholder</string>
     <string name="password">Password</string>
     <string name="composables_textfield_password">Password</string>
+    <string name="composables_textfield_outlined">Outlined Text Field</string>
 </resources>
