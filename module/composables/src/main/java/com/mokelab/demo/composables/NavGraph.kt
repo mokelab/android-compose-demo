@@ -4,6 +4,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.mokelab.demo.composables.image.ImageResourceScreen
+import com.mokelab.demo.composables.image.ImageTopScreen
 import com.mokelab.demo.composables.text.TextColor
 import com.mokelab.demo.composables.text.TextDisplay
 import com.mokelab.demo.composables.text.TextSize
@@ -24,7 +26,6 @@ fun NavGraphBuilder.composablesGraph(navController: NavController, route: String
         composable("${route}/${routeText}") {
             TextTopScreen(routePrefix = "${route}/${routeText}", back = back, navigate = navigate)
         }
-
         composable("${route}/${routeText}/${routeDisplay}") {
             TextDisplay(back = back)
         }
@@ -34,11 +35,20 @@ fun NavGraphBuilder.composablesGraph(navController: NavController, route: String
         composable("${route}/${routeText}/${routeSize}") {
             TextSize(back = back)
         }
+
+        composable("${route}/${routeImage}") {
+            ImageTopScreen(routePrefix = "${route}/${routeImage}", back = back, navigate = navigate)
+        }
+        composable("${route}/${routeImage}/${routeResource}") {
+            ImageResourceScreen(back = back)
+        }
     }
 }
 
 const val routeTop = "top"
 const val routeText = "text"
+const val routeImage = "image"
 const val routeDisplay = "display"
 const val routeColor = "color"
 const val routeSize = "size"
+const val routeResource = "resource"

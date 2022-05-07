@@ -1,22 +1,27 @@
-package com.mokelab.demo.composables
+package com.mokelab.demo.composables.image
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
+import com.mokelab.demo.composables.R
+import com.mokelab.demo.composables.routeDisplay
+import com.mokelab.demo.composables.routeResource
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 
 @Composable
-fun TopScreen(
+fun ImageTopScreen(
     routePrefix: String,
     back: () -> Unit,
     navigate: (route: String) -> Unit,
 ) {
     val items = listOf(
-        ListItem(stringResource(id = R.string.composables_text), "${routePrefix}/${routeText}"),
-        ListItem(stringResource(id = R.string.composables_image), "${routePrefix}/${routeImage}")
+        ListItem(
+            stringResource(id = R.string.composables_image_resource),
+            "${routePrefix}/${routeResource}"
+        ),
     )
     SimpleList(
-        title = stringResource(id = R.string.group_composables),
+        title = stringResource(id = R.string.composables_image),
         listItems = items,
         back = back,
         navigate = navigate

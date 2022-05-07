@@ -20,5 +20,5 @@ fun TextDisplay(
             text = stringResource(id = R.string.composables_text_hello),
             modifier = Modifier.padding(paddingValues)
         )
-    } // end of Scaffold
+    }
 }
