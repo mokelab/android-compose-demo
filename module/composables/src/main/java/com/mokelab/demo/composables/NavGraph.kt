@@ -7,6 +7,7 @@ import androidx.navigation.navigation
 import com.mokelab.demo.composables.button.buttonGraph
 import com.mokelab.demo.composables.image.imageGraph
 import com.mokelab.demo.composables.text.textGraph
+import com.mokelab.demo.composables.textfield.textFieldGraph
 
 fun NavGraphBuilder.composablesGraph(navController: NavController, route: String) {
     val back: () -> Unit = {
@@ -23,6 +24,7 @@ fun NavGraphBuilder.composablesGraph(navController: NavController, route: String
         textGraph("${route}/${routeText}", back, navigate)
         imageGraph("${route}/${routeImage}", back, navigate)
         buttonGraph("${route}/${routeButton}", back, navigate)
+        textFieldGraph("${route}/${routeTextField}", back, navigate)
     }
 }
 
@@ -37,3 +39,6 @@ const val routeCenterCrop = "centerCrop"
 const val routeButton = "button"
 const val routeContained = "contained"
 const val routeOutlined = "outlined"
+const val routeTextField = "textField"
+const val routeLabel = "label"
+const val routePlaceholder = "placeholder"

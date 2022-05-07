@@ -13,4 +13,9 @@
     <string name="composables_button">Button</string>
     <string name="composables_button_outlined">Outlined Button</string>
     <string name="composables_button_text">Text Button</string>
+    <string name="composables_textfield">Text Field</string>
+    <string name="composables_textfield_display">Display</string>
+    <string name="composables_textfield_label">Label</string>
+    <string name="email">Email</string>
+    <string name="composables_textfield_placeholder">Placeholder</string>
 </resources>

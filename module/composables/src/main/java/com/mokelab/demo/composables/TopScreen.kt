@@ -23,7 +23,11 @@ fun TopScreen(
         ListItem(
             stringResource(id = R.string.composables_button),
             "${routePrefix}/${routeButton}",
-        )
+        ),
+        ListItem(
+            stringResource(id = R.string.composables_textfield),
+            "${routePrefix}/${routeTextField}",
+        ),
     )
     SimpleList(
         title = stringResource(id = R.string.group_composables),
