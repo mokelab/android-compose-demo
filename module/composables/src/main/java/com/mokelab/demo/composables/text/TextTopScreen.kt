@@ -59,5 +59,6 @@ fun NavGraphBuilder.textGraph(
         composable("${route}/${routeSize}") {
             TextSize(back = back)
         }
+        
     }
 }

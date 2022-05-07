@@ -18,4 +18,6 @@
     <string name="composables_textfield_label">Label</string>
     <string name="email">Email</string>
     <string name="composables_textfield_placeholder">Placeholder</string>
+    <string name="password">Password</string>
+    <string name="composables_textfield_password">Password</string>
 </resources>
