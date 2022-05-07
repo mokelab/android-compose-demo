@@ -6,10 +6,6 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.mokelab.demo.composables.*
-import com.mokelab.demo.composables.button.ButtonContainedScreen
-import com.mokelab.demo.composables.button.ButtonOutlinedScreen
-import com.mokelab.demo.composables.button.ButtonTextScreen
-import com.mokelab.demo.composables.button.ButtonTopScreen
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 

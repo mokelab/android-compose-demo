@@ -6,7 +6,7 @@
     <string name="composables_text_color">Text color</string>
     <string name="composables_text_hello">Hello compose world!</string>
     <string name="composables_text_size">Text size</string>
-    <string name="composables_image_resource">Resouce</string>
+    <string name="composables_image_resource">Resource</string>
     <string name="composables_image">Image</string>
     <string name="composables_image_center_crop">CenterCrop</string>
     <string name="composables_button_contained">Contained Button</string>

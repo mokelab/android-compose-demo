@@ -5,11 +5,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
-import com.mokelab.demo.composables.*
-import com.mokelab.demo.composables.text.TextColor
-import com.mokelab.demo.composables.text.TextDisplay
-import com.mokelab.demo.composables.text.TextSize
-import com.mokelab.demo.composables.text.TextTopScreen
+import com.mokelab.demo.composables.R
+import com.mokelab.demo.composables.routeCenterCrop
+import com.mokelab.demo.composables.routeResource
+import com.mokelab.demo.composables.routeTop
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 
