@@ -12,8 +12,18 @@ fun TopScreen(
     navigate: (route: String) -> Unit,
 ) {
     val items = listOf(
-        ListItem(stringResource(id = R.string.composables_text), "${routePrefix}/${routeText}"),
-        ListItem(stringResource(id = R.string.composables_image), "${routePrefix}/${routeImage}")
+        ListItem(
+            stringResource(id = R.string.composables_text),
+            "${routePrefix}/${routeText}",
+        ),
+        ListItem(
+            stringResource(id = R.string.composables_image),
+            "${routePrefix}/${routeImage}",
+        ),
+        ListItem(
+            stringResource(id = R.string.composables_button),
+            "${routePrefix}/${routeButton}",
+        )
     )
     SimpleList(
         title = stringResource(id = R.string.group_composables),

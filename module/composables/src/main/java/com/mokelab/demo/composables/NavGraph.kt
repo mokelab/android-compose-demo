@@ -4,6 +4,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.mokelab.demo.composables.button.ButtonContainedScreen
+import com.mokelab.demo.composables.button.ButtonTopScreen
 import com.mokelab.demo.composables.image.ImageCenterCropScreen
 import com.mokelab.demo.composables.image.ImageResourceScreen
 import com.mokelab.demo.composables.image.ImageTopScreen
@@ -46,6 +48,17 @@ fun NavGraphBuilder.composablesGraph(navController: NavController, route: String
         composable("${route}/${routeImage}/${routeCenterCrop}") {
             ImageCenterCropScreen(back = back)
         }
+
+        composable("${route}/${routeButton}") {
+            ButtonTopScreen(
+                routePrefix = "${route}/${routeButton}",
+                back = back,
+                navigate = navigate
+            )
+        }
+        composable("${route}/${routeButton}/${routeContained}") {
+            ButtonContainedScreen(back = back)
+        }
     }
 }
 
@@ -57,3 +70,5 @@ const val routeColor = "color"
 const val routeSize = "size"
 const val routeResource = "resource"
 const val routeCenterCrop = "centerCrop"
+const val routeButton = "button"
+const val routeContained = "contained"
