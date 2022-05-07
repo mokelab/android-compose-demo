@@ -12,4 +12,5 @@
     <string name="composables_button_contained">Contained Button</string>
     <string name="composables_button">Button</string>
     <string name="composables_button_outlined">Outlined Button</string>
+    <string name="composables_button_text">Text Button</string>
 </resources>

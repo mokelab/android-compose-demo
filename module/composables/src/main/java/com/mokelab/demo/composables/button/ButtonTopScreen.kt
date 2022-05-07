@@ -5,6 +5,7 @@ import androidx.compose.ui.res.stringResource
 import com.mokelab.demo.composables.R
 import com.mokelab.demo.composables.routeContained
 import com.mokelab.demo.composables.routeOutlined
+import com.mokelab.demo.composables.routeText
 import com.mokelab.demo.compose.list.ListItem
 import com.mokelab.demo.compose.list.SimpleList
 
@@ -22,6 +23,10 @@ fun ButtonTopScreen(
         ListItem(
             stringResource(id = R.string.composables_button_outlined),
             "${routePrefix}/${routeOutlined}"
+        ),
+        ListItem(
+            stringResource(id = R.string.composables_button_text),
+            "${routePrefix}/${routeText}"
         ),
     )
     SimpleList(

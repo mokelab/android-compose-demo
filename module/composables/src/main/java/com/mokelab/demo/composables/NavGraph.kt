@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.mokelab.demo.composables.button.ButtonContainedScreen
 import com.mokelab.demo.composables.button.ButtonOutlinedScreen
+import com.mokelab.demo.composables.button.ButtonTextScreen
 import com.mokelab.demo.composables.button.ButtonTopScreen
 import com.mokelab.demo.composables.image.ImageCenterCropScreen
 import com.mokelab.demo.composables.image.ImageResourceScreen
@@ -62,6 +63,9 @@ fun NavGraphBuilder.composablesGraph(navController: NavController, route: String
         }
         composable("${route}/${routeButton}/${routeOutlined}") {
             ButtonOutlinedScreen(back = back)
+        }
+        composable("${route}/${routeButton}/${routeText}") {
+            ButtonTextScreen(back = back)
         }
     }
 }
